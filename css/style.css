@@ -9,25 +9,26 @@ body {
     border: 0;
 }
 
-header.header-background div.header-content h3 {
-    font-weight: 100;
+header.header-background {
+    position: relative;
+    background-position: center;
+    background-size: 100%;
 }
 
 header.header-background div.header-content {
-        position: absolute;
-        color: #fff;
-        text-transform: uppercase;
-    }
+    position: absolute;
+    color: #fff;
+    text-transform: uppercase;
+}
 
-header.header-background{
-    position:relative;
-    background-position: center;
+header.header-background div.header-content h3 {
+    font-weight: 100;
 }
 
 @media (min-width: 1171px) {
     header.header-background {
         background-image: url(../images/man-1.jpg);
-        height: 100vh; 
+        height: 100vh;
         text-align: left;
     }
     header.header-background div.header-content {
@@ -41,7 +42,7 @@ header.header-background{
 @media (max-width: 1170px) {
     header.header-background {
         background-image: url(../images/man-2.jpg);
-        height: 75vh;
+        height: 70vh;
         text-align: right;
     }
     header.header-background div.header-content {
@@ -56,7 +57,6 @@ header.header-background{
     header.header-background {
         background-image: url(../images/man-1.jpg);
         max-height: 50vh;
-        background-position: center;
         text-align: center;
     }
     header.header-background div.header-content {
@@ -64,7 +64,7 @@ header.header-background{
         color: #fff;
         text-transform: uppercase;
         color: black;
-        left:0;
+        left: 0;
         right: 0;
     }
 }
